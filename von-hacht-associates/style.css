@@ -3704,3 +3704,18 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     padding-bottom: 50px;
     border-bottom: 1px solid gray;
 }
+
+.page-id-1157 .sidebar {
+    display:none;
+}
+
+.page-id-1157  #gform_fields_2 legend.gfield_label.gform-field-label.gfield_label_before_complex {
+    font-size: 18px;
+}
+
+.page-id-1157  #gform_fields_2 .gchoice.gchoice_2_5_1 {
+    display: grid;
+    grid-template-columns: 15px auto;
+    align-items: flex-start;
+    gap: 10px;
+}
