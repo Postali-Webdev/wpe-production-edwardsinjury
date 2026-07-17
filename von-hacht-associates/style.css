@@ -3719,3 +3719,18 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     align-items: flex-start;
     gap: 10px;
 }
+
+.page-id-1185 .sidebar {
+    display:none;
+}
+
+.page-id-1185  #gform_fields_3 legend.gfield_label.gform-field-label.gfield_label_before_complex {
+    font-size: 18px;
+}
+
+.page-id-1185  #gform_fields_3 .gchoice.gchoice_3_5_1 {
+    display: grid;
+    grid-template-columns: 15px auto;
+    align-items: flex-start;
+    gap: 10px;
+}
