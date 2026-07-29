@@ -3752,6 +3752,7 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
 .page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_0,
 .page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_1 {
     background: #7ea794;
+    border-radius: 50px;
     padding: 5px 15px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
