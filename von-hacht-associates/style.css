@@ -3723,6 +3723,11 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
 .page-id-1185 form#gform_3 {
     padding: 25px;
     border: 1px solid lightgray;
+    margin-top: 20px;
+}
+
+.page-id-1185 fieldset#field_3_7 legend {
+    font-size: 20px;
 }
 
 .page-id-1185  #gform_fields_3 legend.gfield_label.gform-field-label.gfield_label_before_complex {
