@@ -3775,6 +3775,10 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     font-weight: bold;
 }
 
+.page-id-1185 .gfield_checkbox .gchoice label {
+    font-weight: normal !important;
+}
+
 .page-id-1185  #gform_fields_3 .gchoice {
     display: flex;
     align-items: center;
