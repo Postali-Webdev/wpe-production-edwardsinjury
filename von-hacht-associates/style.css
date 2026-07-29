@@ -3720,6 +3720,11 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     gap: 10px;
 }
 
+.page-id-1185 form#gform_3 {
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
 .page-id-1185  #gform_fields_3 legend.gfield_label.gform-field-label.gfield_label_before_complex {
     font-size: 18px;
 }
@@ -3741,12 +3746,17 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
 
 .page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_0,
 .page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_1 {
-    background: #efefef;
+    background: #7ea794;
     padding: 5px 15px;
-    border: 1px solid black;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+}
+
+.page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_0 label,
+.page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_1 label {
+    color:white;
+    font-weight: bold;
 }
 
 .page-id-1185  #gform_fields_3 label {
