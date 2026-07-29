@@ -3731,6 +3731,15 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     gap: 10px;
 }
 
+.page-id-1185  #gform_fields_3 label {
+    display:block;
+}
+
+.page-id-1185  #gform_fields_3 .gchoice {
+    display: flex;
+    align-items: center;
+}
+
 .header-widget-area .widget .header-contact:before {
     display:none !important;
 }
