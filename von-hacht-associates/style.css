@@ -3731,6 +3731,23 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     gap: 10px;
 }
 
+.page-id-1185  #gform_fields_3 #input_3_7 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_0,
+.page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_1 {
+    background: #efefef;
+    padding: 5px 15px;
+    border: 1px solid black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
 .page-id-1185  #gform_fields_3 label {
     display:block;
 }
