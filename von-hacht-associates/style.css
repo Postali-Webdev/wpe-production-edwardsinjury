@@ -3765,8 +3765,10 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     font-weight: bold;
 }
 
-.page-id-1185  #gform_fields_3 label {
+.page-id-1185  #gform_fields_3 label,
+.page-id-1185  #gform_fields_3 legend {
     display:block;
+    font-weight: bold;
 }
 
 .page-id-1185  #gform_fields_3 .gchoice {
