@@ -3736,6 +3736,7 @@ body .banner-team .banner__content, body .banner-staff .banner__content {
     align-items: center;
     gap: 20px;
     margin-bottom: 30px;
+    flex-wrap:wrap;
 }
 
 .page-id-1185  #gform_fields_3 .gchoice.gchoice_3_7_0,
