@@ -1,0 +1,227 @@
+/**
+ * Web Font Styles, H Styles, Body Text Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+/* Fonts */
+html {
+    font-size: 62.5%;
+    line-height: 1;
+    @media screen and (min-width: $desktop-full) {
+        font-size: 72.5%;
+    }
+    @include respond(tab-port) {
+        font-size: 56.5%;
+    }
+    @include respond(phone) {
+        font-size: 49.4792%;
+    }
+}
+
+h1 {
+    @include headingxl;
+    margin: 0;
+}
+
+h2, h2 strong {
+    @include headingl;
+    color: $blue;
+    margin: 0 0 24px 0;
+    scroll-margin-top: 450px;
+    color:$pine;
+    font-weight: 600;
+    
+    @include respond(phone) {
+        scroll-margin-top: 600px;
+    }
+}
+
+h3, h3 strong {
+    @include headingm;
+    color: $sage;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+}
+
+h4, h4 strong {
+    @include headings;
+    color: $sage;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+}
+
+h5, h5 strong, h6, h6 strong {
+    @include headingxs;
+    color: $sage;
+    margin: 0 0 16px 0;
+}
+
+p, p a {
+    @include bodyr;
+    color: $pine;
+
+    &.headingm {
+        @include headingm;
+    }
+
+    &.headings {
+        @include headings;
+    }
+}
+
+p {
+    margin: 0 0 30px 0;
+
+    a {
+        font-weight: bold !important;
+    }
+}
+
+ul:not(.menu), ol {
+    list-style-position: outside;
+    margin-left: 24px !important;
+}
+
+li, li a {
+    @include bodyr;
+    color: $pine;
+}
+
+a:not(.btn):not(.skip-link) {
+    @include bodyr;
+    color: $pine;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+    &.phone-icon, &.map-icon {
+        position: relative;
+        padding-left: 35px;
+        font-family: $wix-madefor;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            background: url('/wp-content/themes/postali-core/assets/img/gold-phone-icon.svg') no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &.map-icon {   
+        &:before {
+            background: url('/wp-content/themes/postali-core/assets/img/gold-pin-icon.svg') no-repeat;
+        }
+    }
+    &.white {
+        color: $white;
+    }
+}
+
+/* Define the gradient button properties */
+@property --gradient-start {
+  syntax: '<color>';
+  initial-value: $mint;
+  inherits: false;
+}
+
+@property --gradient-end {
+  syntax: '<color>';
+  initial-value: $mint;
+  inherits: false;
+}
+
+.btn:not(.btn-search) {
+    @include buttons;
+    padding: 8px 16px;
+    text-align: center;
+    transition: $trans;
+    margin: 0 0 16px 0;
+    letter-spacing: 0.56px;
+    font-size: 14px !important;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    &::after {
+        position: relative;
+        font-family: $icomoon;
+        content: "\e90d";
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    &.primary {
+        background: linear-gradient(125deg,var(--gradient-start) 0%, var(--gradient-end) 100%);
+        transition: --gradient-start 0.5s ease, --gradient-end 0.5s ease;
+        color: $pine;
+
+        &:hover {
+            --gradient-start: #133627;
+            --gradient-end: #5b8772;
+
+            color:$white;
+            background: linear-gradient(125deg,var(--gradient-start) 0%, var(--gradient-end) 100%);
+        }
+    }
+    &.primary-dark {
+        background: $white;
+        border-color: $white !important;
+        color: $pine;
+        border: solid 1px;
+
+        &:hover {
+            background: rgba($white, .2);
+            border-color: $white !important;
+            color: $white;
+        }
+    }
+    &.secondary {
+        background: transparent;
+        border-color: $pine;
+        color: $pine;
+        border: solid 1px;
+
+        &:hover {
+            background: rgba($mint, .2);
+            color: $white;
+        }
+    }
+    &.secondary-dark {
+        background: transparent;
+        border-color: $white;
+        color: $white;
+        border: solid 1px;
+
+        &:hover {
+            background: rgba($white, .2);
+            border-color: $white;
+            color: $white;
+        }
+    }
+}
+
+.skip-link {
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    top: 180px;
+    left: 60px;
+    @include bodyr;
+    color: $navy;
+    &:focus {
+        opacity: 1;
+        z-index: 999;
+    }
+}
+
+.eyebrow {
+    @include eyebrow;
+    margin-bottom: 24px;
+}

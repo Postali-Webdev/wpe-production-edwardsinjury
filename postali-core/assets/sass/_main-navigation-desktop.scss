@@ -1,0 +1,265 @@
+
+// keyframes for desktop sub-nav
+
+@keyframes fadein {
+    0% { opacity:0; top:90px; }
+    100% { opacity:1; top:70px; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity:0; top:90px; }
+    100% { opacity:1; top:70px; }
+}
+
+header {    
+    #header-top {
+        &_right {
+            &_menu {   
+                .menu { //top level menu
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 0;
+                    padding-bottom: 0;
+                    margin-left: 0 !important;
+                    
+                    .accordion-toggle {
+                        display: none;
+                    }
+                
+                    li {
+                        @include nav-search-desktop;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 0px;
+                        position: relative;
+                        height: auto;
+                        padding: 0;
+                        border-radius: 50px;
+                        border: 1px solid transparent;
+
+                        &:hover {
+                            border:1px solid $white;
+                            background:rgba($white, .2);
+                        }
+
+                        &:not(.menu-item-search) {
+                            &.disable {
+                                opacity: 0.5;
+                                pointer-events: none;
+                            }
+                        }
+                        &.menu-item-has-children {
+                            padding: 0;
+
+                            a {
+                                padding:8px 23px 8px 13px;
+                            }
+                            
+                            &:after {
+                                content: "\e900";
+                                font-family: $icomoon;
+                                color: $mint;
+                                position: absolute;
+                                right: 7px;
+                                top: unset;
+                                width: 12px;
+                                height: 12px;
+                                font-size: 16px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                @include respond(tab-land) {
+                                    display: none;   
+                                }
+                            }
+                        }
+                        &.current_page_ancestor, &.current-menu-item {
+                            @include respond(tab-port) {
+                                & > a {
+                                    text-decoration: underline;
+                                }
+                            }
+                            &:before {
+                                width: 100%;
+                            }
+                        }
+                        
+                        a {
+                            @include nav-primary;
+                            color: $white;
+                        }
+                        
+                        &.menu-item-mobile-btn {
+                            display: none;
+                            @include respond(tab-land) {
+                                display: flex;
+                            }
+                            a {
+                                display: none;
+                                @include buttons;
+                                text-transform: capitalize;
+                                font-size: clamp(14px, 1.4rem, 1.4rem) !important;
+                                font-weight: $normal;
+                                padding: 8px 16px;
+                                text-align: center;
+                                transition: $trans;
+                                border: solid 1px;
+                                background: $mint;
+                                border-radius: 50px;
+                                color: $pine;
+                                width: 100%;
+                                span {
+                                    font-weight: $bold;
+                                }
+                                @include respond(tab-land) {
+                                    display: block;
+                                }
+                            }
+
+                            &:hover {
+                                border: none;
+                                background: none;
+                            }
+                        }
+                        &.nav-button {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 10px;
+                            position: relative;
+                            height: auto;
+                            padding: 0;
+                            border-radius: 50px;
+                            border: none;
+                            
+                            a {
+                                @include buttons;
+                                font-size: clamp(14px, 1.4rem, 1.4rem) !important;
+                                padding: 8px 16px;
+                                text-align: center;
+                                transition: $trans;
+                                border: none;
+                                border-radius: 50px;
+                                background: $white;
+                                color: $pine;
+                                
+                                @include respond(tab-land) {
+                                    background: none;
+                                    border: 0;
+                                    padding: 0;
+                                    @include nav-primary;
+                                    color: $navy;
+                                }
+                                &:hover {
+                                    background: rgba($white, .7);
+                                }
+                            }
+                        }
+                        
+                        .sub-menu { //second level menu
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            margin-left: 0;
+                            background: $white;
+                            width: 100%;
+                            min-width: 225px;
+                            border-radius: 0 0 10px 10px;
+                            padding: 24px;
+                            flex-direction: column;
+                            gap: 0;
+                            margin-left: 0 !important;
+                            
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: -45px;
+                                left: 0;
+                                height: 45px;
+                                width: 100%;
+                            }
+                            li {
+                                padding: 0;
+                                margin: 0;
+                                transition: $trans;
+                                &:hover {
+                                    a {
+                                        color: $berry;
+                                        text-decoration: none;
+                                    }
+                                    .sub-menu {
+                                        display: flex;
+                                    }
+                                }
+                                &.menu-item-has-children {
+                                    &:after {
+                                        right: 10px;
+                                        transform: rotate(-90deg);
+                                    }
+                                }
+                                &:before {
+                                    display: none;
+                                }
+                                &.current_page_ancestor, &.current-menu-item {
+                                    & > a {
+                                        text-decoration: underline;
+                                    }
+                                }
+                                a {
+                                    @include nav-secondary;
+                                    color: $pine;
+                                }
+                                .sub-menu { //third level menu
+                                    display: none !important;
+                                    flex-direction: column;
+                                    position: absolute;
+                                    margin-left: 100% !important;
+                                    margin-top: -25px !important;
+
+                                    @media screen and (min-width: 1025px) {
+                                        top: 0 !important;
+                                    }
+                                    li {
+                                        &:hover {
+                                            a {
+                                                color: $berry;
+                                            }
+                                        }
+                                        a {
+                                            color:$pine;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    .sub-menu {
+                                        display:block !important;
+                                    }
+                                }
+                            }
+                        }
+                        &:not(.nav-button) {
+                            &:hover,
+                            >a:focus,
+                            >a:focus-visible {
+                                & > a {
+                                    color: $white;
+                                }
+                                .sub-menu {
+                                    display: flex;
+                                    z-index: 0;
+                                    @media screen and (min-width: 1025px) {
+                                        -webkit-animation: .3s ease 0s normal forwards 1 fadein;
+                                        animation: .3s ease 0s normal forwards 1 fadein;
+                                    }
+                                    
+                                }
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

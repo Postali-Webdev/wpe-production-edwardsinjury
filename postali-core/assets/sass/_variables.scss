@@ -1,0 +1,77 @@
+/**
+ * Sass variables and functions.
+ *
+ * @package Postali Child
+ * @author Postali LLC
+ */
+
+// Breakpoints
+$desktop-full: 1920px;
+$desktop-lg: 1400px;
+$desktop: 1200px;
+$tab-land: 1024px;
+$tab-port: 820px;
+$phone: 600px;
+
+// Containers
+$container-max-width: $desktop-lg;
+$container-padding:30px;
+
+// Transitions
+$transition-speed:.3s;
+$transition-fast:.3s ease-in-ease-out;
+$transition-slow:.5s ease-in-ease-out;
+
+// Core Colors
+$blue: #265d95;
+$ocean: #293c51;
+$navy: #1b2c3e;
+$navy-fade-15: rgba(27, 44, 62, 0.15);
+$cream: #f0eeeb;
+$white: #FFFFFF;
+$white-fade-20: rgba(255, 255, 255, 0.20);
+$white-fade-40: rgba(255, 255, 255, 0.20);
+$black-fade-15: rgba(0, 0, 0, 0.15);
+$light-gold: #C39F69;
+$gold: #b08c58;
+$gold-on-light: #93703e;
+$sage: #55696a;
+$ocean-fade: #344363;
+$sage-fade: #909AAD;
+$navy-fade: #1b2c3e;
+
+
+$pearl: #f7f4f5;
+$cream: #e8e5e6;
+$berry: #ac2148;
+$wine: #5E2233;
+$cherry: #2d0609;
+$pine: #2c4138;
+$mint: #a4c3b4;
+$sage: #668c7a;
+$mauve: #bb929e;
+$grad-L: linear-gradient(135deg,rgba(45, 6, 9, 1) 0%, rgba(94, 34, 51, 1) 100%);
+$grad-R: linear-gradient(315deg,rgba(45, 6, 9, 1) 0%, rgba(94, 34, 51, 1) 100%);
+$grad-D: linear-gradient(180deg,rgba(45, 6, 9, 1) 0%, rgba(94, 34, 51, 1) 100%);
+
+$link-transition-speed: .15s;
+$trans: 0.2s linear;
+
+// Typography
+$icomoon: "Icomoon";
+$wix-madefor: "Wix Madefor Display", sans-serif;
+$instrument-sans: "Instrument Sans", sans-serif;
+$oooh-baby: "Oooh Baby", cursive;
+
+$body-line-height: 130%;
+
+// Font Weight
+
+$super-light: 100;
+$extra-light: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700; 
+$black: 900;

@@ -1,0 +1,165 @@
+.gform_wrapper {
+    padding: 50px 50px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    @include respond(tab-port) {
+        padding:30px 30px 20px;
+    }
+
+    .gfield {
+        input,
+        textarea {
+            padding:12px !important;
+        }
+    }
+
+    label {
+        color:$white;
+        text-transform: none !important;
+        font-size: 14px !important;
+        font-weight: normal;
+    }
+
+    .gfield_required {
+        color: $white !important;
+    }
+
+    p.gform_required_legend {
+        color:$white;
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        text-transform: none !important;
+        font-weight: bold !important;
+        border:none;
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+        transition:$trans;
+        white-space: break-spaces;
+        line-height: 130% !important;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+
+    &#gform_wrapper_1 {
+        border: none;
+        padding: 0; 
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            border: 1px solid white !important;
+            border-radius: 50px !important;
+            background: rgba($white, .2) !important;
+        }
+
+        textarea {
+            border: 1px solid white !important;
+            border-radius: 20px !important;
+            background: rgba($white, .2) !important;
+        }
+
+        input[type="submit"] {
+            text-transform: none !important;
+            font-weight: bold !important;
+            border:none;
+            padding: 15px 20px;
+            display: block;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            transition:$trans;
+            white-space: break-spaces;
+            line-height: 130% !important;
+            -webkit-appearance: none;
+            border-radius: 50px !important;
+        }
+
+        @media screen and (max-width:639px) {
+        #input_1_10 {
+                margin-bottom: 12px;
+            }
+        }
+
+        div#field_1_3 {
+            @media screen and (max-width:639px) {
+                margin-bottom: 12px;
+            }
+        }
+
+        div#field_1_6 {
+            margin-top: 20px;
+        }
+    }
+
+    &#gform_wrapper_3,
+    &#gform_wrapper_4 {
+        border: none;
+        padding: 0; 
+
+        #gform_fields_3,
+        #gform_fields_4 {
+            row-gap: 15px !important;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            border: 1px solid $pine !important;
+            border-radius: 50px !important;
+        }
+
+        textarea {
+            border: 1px solid $pine !important;
+            border-radius: 20px !important;
+        }
+
+        input[type="submit"] {
+            text-transform: none !important;
+            font-weight: bold !important;
+            border:none;
+            padding: 15px 20px;
+            display: block;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            transition:$trans;
+            white-space: break-spaces;
+            line-height: 130% !important;
+            -webkit-appearance: none;
+            border-radius: 50px !important;
+            background:$sage !important;
+        }
+
+        label,
+        legend {
+            color:$pine !important;
+            text-transform: none !important;
+            font-size: 14px !important;
+            font-weight: normal;
+        }
+
+        .gfield_required {
+            color: $pine !important;
+        }
+
+        p.gform_required_legend {
+            color:$pine;
+            font-size: 12px;
+        }
+
+        .gchoice {
+            display: flex;
+            align-items: center;
+        }
+
+        input.gfield-choice-input{
+            border: 1px solid $pine !important;
+        }
+    }
+}
+
