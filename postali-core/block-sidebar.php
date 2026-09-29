@@ -29,7 +29,7 @@
                 <p class="large"><?php echo esc_html($headline); ?></p>
                 <p class="result"><?php echo esc_html($content); ?></p>
             </div>
-            <p class="sidebar-more"><a class="btn secondary-dark" href="/case-results/" title="Read more results">Read More Results</a> <span class="icon-tick-down"></span></p>
+            <p class="sidebar-more"><a class="btn secondary-dark" href="/successes/" title="Read more results">Read More Results</a> <span class="icon-tick-down"></span></p>
         </div>
     <?php } ?>
 
