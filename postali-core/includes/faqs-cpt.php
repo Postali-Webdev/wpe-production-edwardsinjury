@@ -33,7 +33,7 @@ function create_custom_post_type_faqs() {
 		'supports' => array( 'title', 'editor', 'excerpt'),	
 		'exclude_from_search' => false,
 		'capability_type' => 'post',
-		'rewrite' => array( 'slug' => 'faqs', 'with_front' => false ),
+		'rewrite' => array( 'slug' => 'faq', 'with_front' => false ),
 		)
 	);
 
