@@ -142,16 +142,6 @@ if ( !empty($single_schema) ) :
     echo '<script type="application/ld+json">' . $single_schema . '</script>';
 endif; ?>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7PX4JEVGN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V7PX4JEVGN');
-</script>
-
 <script type="text/javascript" src="//cdn.callrail.com/companies/649302721/51525ff5fa672d4ff58f/12/swap.js"></script>
 
 <?php wp_footer(); ?>
