@@ -865,6 +865,7 @@
     .hp-p9 {
         background:$mint;
         padding: 0;
+        content-visibility: visible;
 
         .container {
             padding: 0 !important;
@@ -990,6 +991,14 @@
                 p {
                     margin-bottom: 0;
                     line-height: 1.3;
+                }
+
+                .tout-img {
+                    img {
+                        max-height: 26px;
+                        height: 100%;
+                        width: auto;
+                    }
                 }
             }
         }
